@@ -66,6 +66,7 @@ function convertToGeoHash(input) {
             return encodeGeoHash(lat, lng, coordinatePrecision);
         }
     }
+    return '-=error=-';
 }
 
 
