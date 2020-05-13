@@ -32,7 +32,7 @@ $('#btnChangeDirection').click(function() {
     else {
         $('#txtInput').attr('placeholder', 'one coordinate input per line: latitude, longitude, precision(optional)');
         $('#lblInput').html("Coordinate(s):");
-        $('#lblOutput').html("Geohash(s):");        
+        $('#lblOutput').html("Geohash(es):");        
     }
 });
 
