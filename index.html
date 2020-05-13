@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Online Geohash Converter">
+    <meta name="author" content="Mete Ercan Pakdil">
+
+    <title>Geohash Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main role="main" class="container">
+        <h1 class="mt-5">Geohash Converter</h1>
+        <p class="lead">Simple and straightforward online <a href="https://en.wikipedia.org/wiki/Geohash" target="blank">geohash</a> converter</p>
+        <div class="form-group">
+            <label for="txtFirstInput" id="lblInput">Geohash(es):</label>
+            <textarea class="form-control" id="txtInput" rows="4" placeholder="one geohash input per line"></textarea>
+        </div>
+        <div class="row" style="display: none;" id="frmPrecision">
+            <label for="txtPrecision" class="col-auto col-form-label pr-1 my-auto">Default Precision:</label>
+            <div class="col-auto my-auto">
+                <input type="email" class="form-control" style="max-width: 100px;" id="txtPrecision">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtOutput" id="lblOutput">Coordinate(s):</label>
+            <textarea class="form-control" id="txtOutput" rows="4" readonly></textarea>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="btnConvert">Convert</button>
+                <button type="button" class="btn btn-secondary" id="btnChangeDirection">Change Direction</button>
+            </div>            
+            <div class="col-auto px-1">                
+                <button type="button" class="btn btn-link" id="btnClear">Clear</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted"><a href="https://github.com/mtrcn/geohash-converter" target="blank">Source Code</a></span>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="geohash.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
